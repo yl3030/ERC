@@ -422,6 +422,18 @@ main>div {
     justify-content: space-between;
 }
 
+.data-box .data-style-box {
+    width: 23%;
+    height: 485px;
+    background-image: url(../img/form-style.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.data-box .data-style-box.right {
+    transform: rotate(180deg);
+}
+
 .data-box .data-style {
     width: 23%;
 }
@@ -466,6 +478,7 @@ main>div {
     outline: none;
     font-size: 20px;
     padding: 0 8px;
+    width: 100%;
 }
 
 form .check-box {
@@ -484,9 +497,9 @@ form .check-box .check {
 }
 
 form .check-box .check img {
-    width: 19px;
+    width: 85%;
     display:inline-block;
-    margin: 5px auto;
+    margin: 7.5% auto;
     transition: 0.3s;
     opacity: 0;
 }
@@ -533,11 +546,20 @@ form button {
     form .check-box {
         margin: 30px auto;
     }
+    .data-box .data-style-box {
+        height: 425px;
+    }
 }
 
 @media screen and (max-width: 889px) {
     .eb-box .tb:nth-child(2) .traffic-box .traffic-content .pic-box {
         padding-bottom: 67%;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .door-box.bigtalk .title-pic {
+        top: 72%;
     }
 }
 
@@ -563,6 +585,9 @@ form button {
     .tb-box .tb:nth-child(2) .traffic-box .traffic-content .pic-box {
         padding-bottom: 67%;
     }
+    .service {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 813px) {
@@ -571,6 +596,9 @@ form button {
     }
     .data-box form {
         padding: 0 10px;
+    }
+    .data-box .data-style-box {
+        height: 395px;
     }
 }
 
@@ -612,24 +640,18 @@ form button {
         width: 100%;
         padding-bottom: 52.22%;
     }
-    .door-box.bigtalk .title-pic {
-        top: 73%;
-    }
-    .service {
-        width: 45%;
-    }
 }
 
 @media screen and (max-width: 710px) {
     .data-box {
         width: 95%;
     }
-    .data-box .data-style {
+    /* .data-box .data-style {
         width: 21%;
-    }
-    .data-box form {
+    } */
+    /* .data-box form {
         width:56%;
-    }
+    } */
     form .check-box .check {
         width: 20px;
         height: 20px;
@@ -646,12 +668,12 @@ form button {
     .eb-box .tb:nth-child(3) .traffic-box .traffic-content .pic-box {
         padding-bottom: 65%;
     }
+    .door-box.bigtalk .title-pic {
+        top: 70%;
+    }
 }
 
 @media screen and (max-width: 680px) {
-    .door-box.bigtalk .title-pic {
-        top: 72%;
-    }
     .door-box.winorlose {
         padding-bottom: 18%;
     }
@@ -661,11 +683,14 @@ form button {
     .door-box.winorlose .door-content {
         top: 91%;
     }
+    .service {
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    .door-box.bigtalk .title-pic {
-        top: 71%;
+    .data-box .data-style-box {
+        height: 350px;
     }
 }
 
@@ -684,6 +709,9 @@ form button {
     }
     .door-box.kongfu .door-content {
         top: 86%;
+    }
+    .door-box.bigtalk .title-pic {
+        top: 68%;
     }
 }
 
@@ -709,6 +737,9 @@ form button {
     form .check-box {
         margin: 10px auto;
     }
+    .data-box .data-style-box {
+        height: 270px;
+    }
 }
 
 @media screen and (max-width: 590px)  {
@@ -718,6 +749,12 @@ form button {
     .service {
         margin: 50px auto 0;
         width: 55%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .door-box.bigtalk .title-pic {
+        top: 67%;
     }
 }
 
@@ -772,7 +809,7 @@ form button {
 
 @media screen and (max-width: 510px) {
     .door-box.bigtalk .title-pic {
-        top: 69%;
+        top: 68%;
     }
     .service {
         margin: 40px auto 0;
@@ -815,7 +852,13 @@ form button {
         padding-bottom: 5px;
     }
     .service {
-        width: 70%;
+        width: 80%;
+    }
+    form .check-box span a {
+        margin-left: 3px;
+    }
+    form .check-box .check {
+        margin-right: 0;
     }
 }
 
@@ -846,9 +889,18 @@ form button {
     }
 }
 
+@media screen and (max-width: 463px) {
+    .data-box .data-style-box {
+        height: 295px;
+    }
+}
+
 @media screen and (max-width: 456px) {
     .tb-box .tb:nth-child(2) .traffic-box .traffic-content .pic-box {
         padding-bottom: 48%;
+    }
+    .door-box.bigtalk .title-pic {
+        top: 66%;
     }
 }
 
@@ -957,6 +1009,12 @@ form button {
     .tb .traffic-box .traffic-content .text-box {
         font-size: 14px;
     }
+    .door-box.bigtalk .title-pic {
+        top: 64%;
+    }
+    .service {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 393px) {
@@ -1007,6 +1065,9 @@ form button {
     }
     .door-box .title-pic {
         top: 84%;
+    }
+    .door-box.food .title-pic {
+        top: 80%;
     }
 }
 
@@ -1064,6 +1125,12 @@ form button {
     }
 }
 
+@media screen and (max-width: 335px) {
+    .door-box.name .door-content {
+        top: 92%;
+    }
+}
+
 @media screen and (max-width: 330px) {
     .door-box.bigtalk .title-pic {
         top: 62%;
@@ -1082,14 +1149,23 @@ form button {
         height: 25px;
     }
     .door-box.winorlose .door-content {
-        top: 85%;
+        top: 84%;
+    }.door-box.bigtalk .title-pic {
+        top: 49%;
+    }
+    .service {
+        flex-wrap: wrap;
+        width: 60%;
+    }
+    .service .service-box {
+        width: 100%;
+    }
+    .door-content {
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 310px) {
-    .door-box.bigtalk .title-pic {
-        top: 62%;
-    }
     .service {
         margin: 30px auto 0;
     }
@@ -1099,17 +1175,13 @@ form button {
     .tb .traffic-box .traffic-content .text-box {
         font-size: 13px;
     }
+    .door-box.bigtalk .title-pic {
+        top: 48%;
+    }
 }
 
-@media screen and (max-width: 295px) {
+@media screen and (max-width: 290px) {
     .door-box.bigtalk .title-pic {
-        top: 49%;
-    }
-    .service {
-        flex-wrap: wrap;
-        width: 50%;
-    }
-    .service .service-box {
-        width: 100%;
+        top: 47%;
     }
 }
