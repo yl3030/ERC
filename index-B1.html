@@ -11,7 +11,7 @@
 <body>
     <main>
         <div>
-            <div class="main-pic-box w-95 door-box">
+            <div class="main-pic-box door-box w-95">
                 <div class="video-box door">
                     <img class="big-pic" src="./public/img/video-bg.png" alt="">
                     <img class="d-pic inner-pic" src="./public/img/video-pic.jpg" alt="">
@@ -288,6 +288,17 @@
             <div class="main-border-box mbb-right"></div>
         </div>
     </main>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(".check-box").children(".check").click(function () {
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+            } else {
+                $(this).addClass("active");
+            }
+        })
+    </script>
 </body>
 
 </html>
